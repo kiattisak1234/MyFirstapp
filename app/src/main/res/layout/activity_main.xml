@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ice.myfirstapp.MainActivity"
+    android:background="@drawable/wallpapers_a_03">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTitel"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@dimen/H1"
+        android:id="@+id/textView"
+        android:textStyle="bold" />
+
+    <Button
+        android:text="@string/MoreInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMoreInfo"
+        android:layout_alignParentBottom="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/btnMoreInfo"
+        android:id="@+id/livTroffic"
+        android:background="#c3ffffff"
+        android:layout_margin="@dimen/my_morgin" />
+
+</RelativeLayout>
