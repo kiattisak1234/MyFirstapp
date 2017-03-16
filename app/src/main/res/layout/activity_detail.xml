@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    tools:context="com.example.ice.myfirstapp.Detail"
+    android:background="@drawable/wallpapers_a_03">
+
+    <TextView
+        android:text="ป้ายจราจร"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:id="@+id/txtTitleDetail"
+        android:layout_centerInParent="false"
+        android:layout_margin="@dimen/my_morgin" />
+
+    <Button
+        android:text="back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickBack"
+        android:id="@+id/btnBack"
+        android:layout_alignParentBottom="true"/>
+
+
+    <ImageView
+        android:id="@+id/imvImageDetail"
+        android:layout_width="@dimen/my_picture"
+        android:layout_height="@dimen/my_picture"
+        android:layout_below="@+id/txtTitleDetail"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/traffic_01" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_margin="@dimen/my_morgin"
+        android:layout_below="@id/imvImageDetail"
+        android:layout_above="@id/btnBack"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtDatailScro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="TextView"
+                android:textSize="@dimen/H2" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

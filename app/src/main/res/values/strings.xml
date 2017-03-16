@@ -2,4 +2,13 @@
     <string name="app_name">My Firstapp</string>
     <string name="txtTitel">ป้ายจราจร</string>
     <string name="MoreInfo">ข้อมูลเพิ่มเติม</string>
+    <string name="aboutMe">About Me</string>
+    <string name="name">นาย เกียรติศักดิ์ ดุลยกาญจน์ </string>
+    <string name="idsdu">รหัสนักศึกษา: 5711020660012</string>
+    <string name="com">หลักสูตร วิทยการคอมพิวเตอร์</string>
+    <string name="facebook">Kiattisak Dulyakarn</string>
+    <string name="Phone">0953650255</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_a">A</string>
+    
 </resources>

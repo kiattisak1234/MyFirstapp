@@ -17,21 +17,37 @@
         android:id="@+id/textView"
         android:textStyle="bold" />
 
-    <Button
-        android:text="@string/MoreInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnMoreInfo"
-        android:onClick="onCickMoreInfo"
-        android:layout_alignParentBottom="true" />
-
     <ListView
+        android:id="@+id/livTroffic"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/layButton"
         android:layout_below="@+id/textView"
-        android:layout_above="@+id/btnMoreInfo"
-        android:id="@+id/livTroffic"
-        android:background="#c3ffffff"
-        android:layout_margin="@dimen/my_morgin" />
+        android:layout_margin="@dimen/my_morgin"
+        android:background="#c3ffffff" />
+
+    <LinearLayout
+        android:id="@+id/layButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMoreInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onCickMoreInfo"
+            android:text="@string/MoreInfo" />
+
+        <Button
+            android:id="@+id/btnAboutMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnAboutMe"
+            android:text="@string/aboutMe" />
+    </LinearLayout>
 
 </RelativeLayout>
