@@ -39,19 +39,20 @@
         app:srcCompat="@drawable/traffic_01" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scrollView2"
-        android:layout_margin="@dimen/my_morgin"
-        android:layout_below="@id/imvImageDetail"
         android:layout_above="@id/btnBack"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/imvImageDetail"
+        android:layout_margin="@dimen/my_morgin"
+        android:background="#98ffffff">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/txtDatailScro"
@@ -64,9 +65,9 @@
                 android:textSize="@dimen/H2" />
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"></LinearLayout>
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
         </LinearLayout>
     </ScrollView>
 

@@ -40,7 +40,7 @@ public class AboutMe extends AppCompatActivity {
             @Override
             public boolean onLongClick(View view) {
                 Toast.makeText(getApplicationContext(), "Thank your very much", Toast.LENGTH_SHORT).show();
-                soundID = R.raw.sound1;
+                soundID = R.raw.sound2;
                 playSound(soundID);
 
                 return true;
